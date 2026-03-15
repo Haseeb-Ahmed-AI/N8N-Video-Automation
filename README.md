@@ -1,5 +1,5 @@
 # AI Video Generator Workflow
-## Architecture Overview
+# Architecture Overview
 
 This automation pipeline processes user-uploaded images through multiple AI services to create professional video content:
 
