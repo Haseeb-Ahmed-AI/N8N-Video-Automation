@@ -1,5 +1,7 @@
 # AI Video Generator Workflow
+
 # Architecture Overview
+
 
 This automation pipeline processes user-uploaded images through multiple AI services to create professional video content:
 
@@ -25,18 +27,21 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 ### Core Components
 
 #### 1. Telegram Integration
+
 - Receives user images with text prompts
 - Processes file uploads through Telegram API
 - Extracts and converts images to Base64 format
 - Maintains conversation context throughout the process
 
 #### 2. Image Processing Pipeline
+
 - **File Processing**: Converts Telegram images to processable formats
 - **API Integration**: Interfaces with Google Nano Banana for image modifications
 - **Base64 Handling**: Manages data encoding for API compatibility
 - **Response Processing**: Extracts and formats AI-generated image data
 
 #### 3. Interactive Approval System
+
 - Presents edited images to users for review
 - Implements structured decision flow:
   - **Approve**: Proceed to video generation
@@ -45,6 +50,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 - Processes user feedback through structured output parsing
 
 #### 4. Video Generation Engine
+
 - **Image Analysis**: Uses GPT-4 Vision to create detailed scene descriptions
 - **Prompt Engineering**: Converts user intent into cinematic video prompts
 - **API Integration**: Interfaces with Veo3 through KIE.ai platform
@@ -55,6 +61,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
   - Quality: UGC-style with natural cinematography
 
 #### 5. Processing Management
+
 - **Asynchronous Handling**: Manages video generation wait times (30+ seconds)
 - **Status Monitoring**: Polls generation status until completion
 - **Error Handling**: Implements retry logic and failure management
@@ -64,12 +71,14 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 ## Business Applications
 
 ### Content Creation
+
 - Social media video generation
 - Marketing material automation
 - Product demonstration videos
 - Personalized content at scale
 
 ### Workflow Automation
+
 - Reduces manual video editing time by 90%
 - Enables non-technical users to create professional content
 - Scales content production capabilities
@@ -77,6 +86,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 ## Setup Requirements
 
 ### API Credentials
+
 - Google Cloud API key (Gemini 2.5 Flash access)
 - OpenAI API key (GPT-4 access)
 - KIE.ai API key (Veo3 access)
@@ -84,6 +94,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 - ImageBB API key
 
 ### Environment Configuration
+
 - n8n instance (self-hosted or cloud)
 - Webhook endpoints for Telegram integration
 - Sufficient API quotas for processing volume
@@ -92,11 +103,13 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 ## Performance Metrics
 
 ### Processing Times
+
 - Image editing: 3-8 seconds
 - Video generation: 30-320 seconds
 - Total workflow: 3-6 minutes average
 
 ### Quality Standards
+
 - Image enhancement: Production-ready output
 - Video quality: HD with cinematic characteristics
 - User satisfaction: High approval rates through feedback system
@@ -104,11 +117,13 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 ## Future Enhancements
 
 ### Platform Extensions
+
 - WhatsApp integration for broader accessibility
 - Slack workspace integration for team workflows
 - Discord bot for community applications
 
 ### Technical Improvements
+
 - Cloud storage integration (AWS S3, Google Cloud Storage)
 - Advanced video customization options
 - Batch processing capabilities
