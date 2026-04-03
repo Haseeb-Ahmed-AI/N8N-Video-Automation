@@ -6,28 +6,18 @@
 This automation pipeline processes user-uploaded images through multiple AI services to create professional video content:
 
 1. **Input Processing** - Capture images and prompts via Telegram
-   
-3. **Image Enhancement** - Apply AI-powered edits using Google Nano Banana
-   
-5. **Interactive Feedback** - User approval system with re-editing capabilities
-    
-7. **Video Generation** - Convert enhanced images to videos using Veo3
-   
-9. **Content Delivery** - Automated distribution through Telegram
+2. **Image Enhancement** - Apply AI-powered edits using Google Nano Banana
+3. **Interactive Feedback** - User approval system with re-editing capabilities
+4. **Video Generation** - Convert enhanced images to videos using Veo3
+5. **Content Delivery** - Automated distribution through Telegram
 
 ## Technical Stack
 
 - **n8n** - Workflow orchestration and automation engine
-  
 - **Google Nano Banana (Gemini 2.5 Flash)** - Advanced image editing and enhancement
-  
 - **Veo3 Fast** - AI video generation via KIE.ai API
-  
 - **OpenAI GPT-4** - Prompt optimization and user intent processing
-  
 - **Telegram Bot API** - User interface and content delivery
-
-
 - **ImageBB** - Image hosting and URL generation
 
 ## Workflow Architecture
