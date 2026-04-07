@@ -29,23 +29,32 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 #### 1. Telegram Integration
 
 - Receives user images with text prompts
+  
 - Processes file uploads through Telegram API
+  
 - Extracts and converts images to Base64 format
+  
 - Maintains conversation context throughout the process
 
 #### 2. Image Processing Pipeline
 
 - **File Processing**: Converts Telegram images to processable formats
+  
 - **API Integration**: Interfaces with Google Nano Banana for image modifications
+  
 - **Base64 Handling**: Manages data encoding for API compatibility
+  
 - **Response Processing**: Extracts and formats AI-generated image data
 
 #### 3. Interactive Approval System
 
 - Presents edited images to users for review
+  
 - Implements structured decision flow:
+  
   - **Approve**: Proceed to video generation
   - **Re-edit**: Return to image editing with new instructions
+    
 - Uses OpenAI for intelligent intent recognition
 - Processes user feedback through structured output parsing
 
