@@ -1,8 +1,6 @@
 # AI Video Generator Workflow
 
-# Architecture Overview
-
-
+# Architecture Overview:
 This automation pipeline processes user-uploaded images through multiple AI services to create professional video content:
 
 1. **Input Processing** - Capture images and prompts via Telegram
@@ -11,7 +9,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 4. **Video Generation** - Convert enhanced images to videos using Veo3
 5. **Content Delivery** - Automated distribution through Telegram
 
-## Technical Stack
+## Technical Stack:
 
 - **n8n** - Workflow orchestration and automation engine
 - **Google Nano Banana (Gemini 2.5 Flash)** - Advanced image editing and enhancement
@@ -20,13 +18,13 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 - **Telegram Bot API** - User interface and content delivery
 - **ImageBB** - Image hosting and URL generation
 
-## Workflow Architecture
+## Workflow Architecture:
 
 ![Workflow Architecture](image.png)
 
-### Core Components
+### Core Components:
 
-#### 1. Telegram Integration
+#### 1. Telegram Integration:
 
 - Receives user images with text prompts
   
@@ -36,7 +34,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
   
 - Maintains conversation context throughout the process
 
-#### 2. Image Processing Pipeline
+#### 2. Image Processing Pipeline:
 
 - **File Processing**: Converts Telegram images to processable formats
   
@@ -46,7 +44,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
   
 - **Response Processing**: Extracts and formats AI-generated image data
 
-#### 3. Interactive Approval System
+#### 3. Interactive Approval System:
 
 - Presents edited images to users for review
   
@@ -58,7 +56,7 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 - Uses OpenAI for intelligent intent recognition
 - Processes user feedback through structured output parsing
 
-#### 4. Video Generation Engine
+#### 4. Video Generation Engine:
 
 - **Image Analysis**: Uses GPT-4 Vision to create detailed scene descriptions
 - **Prompt Engineering**: Converts user intent into cinematic video prompts
@@ -69,32 +67,31 @@ This automation pipeline processes user-uploaded images through multiple AI serv
   - Aspect Ratio: 9:16 (mobile-optimized)
   - Quality: UGC-style with natural cinematography
 
-#### 5. Processing Management
+#### 5. Processing Management:
 
 - **Asynchronous Handling**: Manages video generation wait times (30+ seconds)
 - **Status Monitoring**: Polls generation status until completion
 - **Error Handling**: Implements retry logic and failure management
 - **Result Processing**: Formats and delivers final video content
 
+## Business Applications:
 
-## Business Applications
-
-### Content Creation
+### Content Creation:
 
 - Social media video generation
 - Marketing material automation
 - Product demonstration videos
 - Personalized content at scale
 
-### Workflow Automation
+### Workflow Automation:
 
 - Reduces manual video editing time by 90%
 - Enables non-technical users to create professional content
 - Scales content production capabilities
 
-## Setup Requirements
+## Setup Requirements:
 
-### API Credentials
+### API Credentials:
 
 - Google Cloud API key (Gemini 2.5 Flash access)
 - OpenAI API key (GPT-4 access)
@@ -102,36 +99,37 @@ This automation pipeline processes user-uploaded images through multiple AI serv
 - Telegram Bot Token
 - ImageBB API key
 
-### Environment Configuration
+### Environment Configuration:
 
 - n8n instance (self-hosted or cloud)
 - Webhook endpoints for Telegram integration
 - Sufficient API quotas for processing volume
 - Storage configuration for temporary files
 
-## Performance Metrics
+## Performance Metrics:
 
-### Processing Times
+### Processing Times:
 
 - Image editing: 3-8 seconds
 - Video generation: 30-320 seconds
 - Total workflow: 3-6 minutes average
 
-### Quality Standards
+### Quality Standards:
 
 - Image enhancement: Production-ready output
 - Video quality: HD with cinematic characteristics
 - User satisfaction: High approval rates through feedback system
 
-## Future Enhancements
+## Future Enhancements:
 
-### Platform Extensions
+### Platform Extensions:
 
 - WhatsApp integration for broader accessibility
 - Slack workspace integration for team workflows
 - Discord bot for community applications
 
-### Technical Improvements
+
+### Technical Improvements:
 
 - Cloud storage integration (AWS S3, Google Cloud Storage)
 - Advanced video customization options
